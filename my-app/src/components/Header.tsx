@@ -2,11 +2,17 @@ import Link from "next/link"
 
 export default function Header() {
   return (
-    <div className="flex p-2 gap-4 text-2xl font-bold text-blue-500">
-      <Link href="/"><span className="text-green-500">Home</span></Link>
-      <Link href="/performance">Performance</Link>
-      <Link href="/reliability">Reliability</Link>
-      <Link href="/scale">Scale</Link>
+    <div className="w-full z-10 text-white absolute">
+      <nav className="container relative flex flex-wrap items-center justify-between mx-auto p-8">
+        <Link href="/" className="font-bold text-3xl">
+          Home
+        </Link>
+        <div className="space-x-4 text-xl">
+          <Link href="/performance">Performance</Link>
+          <Link href="/reliability">Reliability</Link>
+          <Link href="/scale">Scale</Link>
+        </div>
+      </nav>
     </div>
   )
 }

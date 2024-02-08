@@ -1,7 +1,11 @@
-const PerformancePage = () => {
-  return (
-    <div>Performance Page</div>
-  )
-}
+import Hero from "@/components/Hero";
 
-export default PerformancePage
+export default function PerformancePage() {
+  return (
+    <Hero 
+      imgData={"/performance.jpg"} 
+      imgAlt="welding" 
+      title="We serve high performance application"
+    />
+  );
+}
